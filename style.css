@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 10vh;
+    background-color: #CEFABB;
 }
 
 img {
@@ -10,8 +11,9 @@ img {
 }
 
 .container {
-    width min(180ch, 100vw - 4rem)
+    width: min(90ch, 100vw - 2rem);
     margin-inline:auto;
+    
 }
 
 ul {
@@ -25,4 +27,53 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
+    padding-top: 50px;
+}
+
+li {
+    display: inline;
+    
+
+  }
+
+nav {
+    height: 50px;
+    background-color: #6EAD53;
+    width: 100vw;
+    display: flex;
+}
+
+.padding{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+:root {
+    --color-light: #f0f0f0;
+    --color-dark: #6EAD53;
+    --color-primary: #8FE06C;
+    --color-secondary: #4a0080;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 1rem 0.75rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-rounded {
+    border-radius: 0%;
 }
